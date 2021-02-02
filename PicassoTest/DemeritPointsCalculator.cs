@@ -11,7 +11,7 @@ namespace PicassoTest
 
         public int CalculateDemeritPoints(int speed)
         {
-            if (speed < 0 || speed > MaxSpeed)
+            if (speed <= 0 || speed >= MaxSpeed)
                 throw new ArgumentOutOfRangeException();
 
             if (speed <= SpeedLimit) return 0;

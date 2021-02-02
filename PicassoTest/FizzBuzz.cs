@@ -27,11 +27,16 @@ namespace PicassoTest
             else if (number % 5 == 0)
             {
                 output = "Buzz";
+            } else if(number == int.MinValue){
+                output = "Infinity";
             }
-            else
+            else if (number == int.MaxValue)
+            {
+                output = "Infinity";
+            } else
             {
                 output = number.ToString();
-            }
+            } 
 
             return output;
         }

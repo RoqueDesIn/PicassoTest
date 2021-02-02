@@ -9,7 +9,11 @@ namespace PicassoTest
         public User MadeBy { get; set; }
         public bool CanBeCancelledBy(User user)
         {
-            if(user.IsAdmin)
+            if (user == null)
+            {
+                return false;
+            }
+            if (user.IsAdmin)
             {
                 return true;
             }
@@ -17,7 +21,7 @@ namespace PicassoTest
             {
                 return true;
             }
-
+ 
             return false;
         }
     }

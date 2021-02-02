@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicassoTest", "PicassoTest\PicassoTest.csproj", "{E70BC5A3-369C-4F03-98E3-5F1A11406A58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicassoTest.Tests", "PicassoTest.Tests\PicassoTest.Tests.csproj", "{4EAEA6EF-0359-43F2-9B82-0640DB7BADCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicassoTest.Tests", "PicassoTest.Tests\PicassoTest.Tests.csproj", "{4EAEA6EF-0359-43F2-9B82-0640DB7BADCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

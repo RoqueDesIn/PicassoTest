@@ -27,15 +27,25 @@ namespace PicassoTest
         /// </summary>
         /// <param name="user">User to pay the reservation</param>
         /// <returns>0 if the reservation is paid and the price of the reservation is substracted from the money of the user,</returns>
-        public float PayReservation(UserComplex user)
+        public float? PayReservation(UserComplex user)
         {
-            throw new NotImplementedException();
+            float? valor=0.0f;
+            if (user.Money == null) 
+            {
+                valor = null;
+            }
+            if (user.Money < Price)
+            {
+                valor = Price - user.Money;
+            }
+
+            return valor;
         }
     }
 
     public class UserComplex
     {
-        public float Money { get; set; }
+        public float? Money { get; set; }
         public bool IsAdmin { get; set; }
     }
 }
